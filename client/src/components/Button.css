@@ -1,0 +1,110 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.block-left {
+margin-left: 100px;
+float:left;
+}
+.wrapper {
+  max-width: 420px;
+  min-height: 50vh;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+button {
+  font-size: 2rem;
+  border: 1px solid #333;
+  cursor: pointer;
+}
+.modifiers button {
+  background-color: #ccc;
+}
+.operations button {
+  background-color: orange;
+  width: 105px;
+}
+.digits button {
+  background-color: #efefef;
+}
+.wrapper,
+.subgrid {
+  display: grid;
+  grid-gap: 10px;
+}
+.wrapper {
+  grid-template-areas:
+    "total total total total"
+    "modif modif modif oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "digit digit digit oper"
+    "equal equal equal equal";
+  grid-auto-columns: 1fr;
+}
+.show-input {
+  grid-area: total;
+  background-color: rgb(255, 255, 255);
+  min-height: 05vh;
+  border-style: solid;
+}
+
+.modifiers {
+  grid-area: modif;
+}
+.operations {
+  grid-area: oper;
+}
+.digits {
+  grid-area: digit;
+}
+.equals {
+  grid-area: equal;
+}
+
+.show-input {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.modifiers {
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+}
+
+.digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.digits button {
+  flex: 1 0 26%;
+}
+
+.equals {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+    display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.button1 {
+  width: 420px;
+}
+
+.flex-fill {
+  border: 1px solid red;
+
+}

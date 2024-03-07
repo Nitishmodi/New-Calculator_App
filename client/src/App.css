@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    /* Background color for the entire page */
+}
+
+.container {
+    margin-top: 20px;
+    border: 1px solid black;
+    padding: 20px;
+    background-color: #e0e0e0;
+    /* Background color for calculator container */
+    border-radius: 10px;
+    transition: background-color 0.5s ease;
+    text-align: center;
+}
+
+.title {
+    color: #333;
+    /* Title color */
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #3498db;
+    /* Button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #2980b9;
+    /* Button hover color */
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.list-item {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+.list-item:hover {
+    background-color: #f0f0f0;
+    /* List item hover color */
+}
+
+.history-btn-container {
+    text-align: center;
+}
+
+.history-btn {
+    background-color: #27ae60;
+    /* History button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.history-btn:hover {
+    background-color: #219653;
+    /* History button hover color */
+}
